@@ -15,5 +15,7 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         public string CariSehir { get; set; }
         public string CariMail { get; set; }
 
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
+
     }
 }

@@ -11,5 +11,8 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         [Key]
         public int KategıriId { get; set; }
         public string KategoriAd { get; set; }
+
+        public ICollection<Urun> Uruns { get; set; }
+
     }
 }
