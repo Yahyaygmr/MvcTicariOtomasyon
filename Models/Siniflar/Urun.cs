@@ -17,8 +17,8 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         public decimal AlisFiyat { get; set; }
         public bool Durum { get; set; }
         public string UrunGorsel { get; set; }
-
-        public Kategori Kategori { get; set; }
+        public int KategıriId { get; set; }
+        public virtual Kategori Kategori { get; set; }
 
         public ICollection<SatisHareket> SatisHarekets { get; set; }
 
